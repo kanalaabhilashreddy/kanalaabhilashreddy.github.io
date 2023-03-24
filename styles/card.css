@@ -2,8 +2,6 @@
     width: 100vw;
     height: 100vh;
     padding: .2rem;
-
-    background-color: rgb(247, 226, 112);
 }
 .container{
     width: 100%;
@@ -15,7 +13,7 @@
     width: inherit;
     height: calc(100% - 20%);
     background: rgba(240, 240, 240, 0.6);
-    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.18);
+    box-shadow: 2.7px 2.7px 9px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(1px)
 }
 .card-item-img-container{
@@ -32,7 +30,6 @@
     height: 100%;
 }
 .card-item-title{
-    width: 100%;
     font-size: 18px;
     font-family: 'Inter';
     font-style: normal;
@@ -41,7 +38,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 0px 4px 3px #000000;
-    backdrop-filter: blur(0.8px);
+    backdrop-filter: blur(0.5px);
     position: absolute;
     top: 93%;
     left: 51%;
@@ -79,6 +76,56 @@
 
 /***Group3***/
 .card-item-order-container{
+    width: inherit;
+    height: calc(100% - 90%);
+    padding: inherit;
+}
+.card-item-order-wrap{
+    width: 100%;
+    height: 100%;
+    padding: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-item-order-text-wrap{
+    width: 60%;
+    height: 90%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    border: none;
+}
+.card-item-order-text{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+
+}
+
+.card-item-order-list-wrap{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+/* .card-item-order-container{
     width: inherit;
     height: calc(100% - 90%);
     padding: inherit;
@@ -179,7 +226,7 @@
 .order-img{
     width: 100%;
     height: 100%;
-}
+} */
 
 /***Group4***/
 .card-item-menu-container{
