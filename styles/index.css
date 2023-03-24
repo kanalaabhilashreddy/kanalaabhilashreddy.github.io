@@ -1,0 +1,154 @@
+/***********************************/
+/***************RESET***************/
+/***********************************/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/***********************************/
+/***********************************/
+
+/*menu-card*/
+.menu-card {
+  width: 100vw;
+  height: 100vh;
+  padding: 0.3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+/*card-header*/
+.card-header {
+  padding: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  border: 1px solid red;
+}
+.card-title {
+  border: 1px solid red;
+  padding: inherit;
+}
+.C-title {
+  font-size: 33px;
+  text-align: center;
+}
+.card-info {
+  border: 1px solid red;
+  padding: inherit;
+}
+
+.C-info {
+  font-size: 12px;
+  text-align: center;
+}
+
+/*item-card*/
+.item-card {
+  background-color: rgb(61, 79, 85);
+  width: 100%;
+  height: 548.8px;
+
+  padding: inherit;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.item-title {
+  border: 1px solid red;
+  padding: inherit;
+  height: calc(100% - 82%);
+}
+.I-title {
+  text-align: center;
+}
+
+.item-img {
+  border: 1px solid red;
+  height: calc(100% - 22%);
+}
+
+.get-item {
+  border: 1px solid red;
+  height: calc(100% - 82%);
+}
